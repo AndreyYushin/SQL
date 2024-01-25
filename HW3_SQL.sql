@@ -23,7 +23,7 @@ Pass: 123
                                                                                                                 from employees as e
                                                                                                                 right join salary as s
                                                                                                                 on e.id = s.id
-                                                                                                                where monthly_salary notnull and employee_name is null;
+                                                                                                                where monthly_salary not null and employee_name is null;
  4. Вывести все зарплатные позиции  меньше 2000 но работник по ним не назначен. (ЗП есть, но не понятно кто её получает.) - select e.employee_name, s.monthly_salary
                                                                                                                             from employees as e
                                                                                                                             right join salary as s
